@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <header>Students draw<i class="fa-solid fa-shuffle"></i></header>
+        <ul>
+            <li>
+                <a class="activePage" href="./index.html">Draw</a>
+            </li>
+            <li>
+                <a href="./adding.html">Adding</a>
+            </li>
+            <li>
+                <a href="./studentslist.html">List of students</a>
+            </li>
+            <li>
+                <a href="./information.html">Information</a>
+            </li>
+            <li>
+                <a href="./importexport.html">Exporting and Importing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="randomPage">
+        <form id="randomStudentForm">
+            <fieldset>
+                <legend>Draw student</legend>
+                <p>
+                    <select required id="randomStudentSelect" name="randomStudentSelect" aria-label="Selection field for the class in which the draw is to take place">
+                        <option value="">Choose a class</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Draw</button>
+                </p>
+            </fieldset>
+        </form>
+        <p id="randomStudentName">...</p>
+    </main>
+    <script src="./js/randomStudent.js"></script>
+    <script src="./js/rules.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tsugumi" data-description="Support me on Buy me a coffee!" data-message="Thanks for using my apps!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

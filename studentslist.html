@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <header>Students draw<i class="fa-solid fa-shuffle"></i></header>
+        <ul>
+            <li>
+                <a href="./index.html">Draw</a>
+            </li>
+            <li>
+                <a href="./adding.html">Adding</a>
+            </li>
+            <li>
+                <a class="activePage" href="./studentslist.html">List of students</a>
+            </li>
+            <li>
+                <a href="./information.html">Information</a>
+            </li>
+            <li>
+                <a href="./importexport.html">Exporting and Importing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="studentsView">
+        <form id="studentViewForm">
+            <fieldset>
+                <legend>Form for viewing and deleting classes</legend>
+                <p>
+                    <select required id="classNameSelectView" name="classNameSelectView" aria-label="Class selection box">
+                        <option value="">Choose a class</option>
+                    </select>
+                    <button type="submit" id="deleteClass">Delete class</button>
+                </p>
+            </fieldset>
+        </form>
+        <ul id="studentsList">
+        </ul>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/addStudents.js"></script>
+    <script src="./js/rules.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tsugumi" data-description="Support me on Buy me a coffee!" data-message="Thanks for using my apps!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

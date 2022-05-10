@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <header>Students draw<i class="fa-solid fa-shuffle"></i></header>
+        <ul>
+            <li>
+                <a href="./index.html">Draw</a>
+            </li>
+            <li>
+                <a class="activePage" href="./adding.html">Adding</a>
+            </li>
+            <li>
+                <a href="./studentslist.html">List of students</a>
+            </li>
+            <li>
+                <a href="./information.html">Information</a>
+            </li>
+            <li>
+                <a href="./importexport.html">Exporting and Importing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="formsMain">
+        <form id="classCreationForm">
+            <fieldset>
+                <legend>Adding classes</legend>
+                <p>
+                    <input placeholder="Class name" type="text" name="className" id="className" required aria-label="The name of the class">
+                </p>
+                <p>
+                    <input placeholder="Group number" type="number" name="groupNumber" id="groupNumber" required aria-label="Class group number">
+                </p>
+                <p>
+                    <button type="submit" id="classCreationButton">Create a class</button>
+                </p>
+                <p class="confirmation classCreationConfirm">Class added positively<i class="fa-solid fa-check"></i></p>
+            </fieldset>
+        </form>
+        <form id="studentCreationForm">
+            <fieldset>
+                <legend>Adding students</legend>
+                <p>
+                    <input placeholder="First name" type="text" name="firstName" id="firstName" required aria-label="Student's first name">
+                </p>
+                <p>
+                    <input placeholder="Last name" type="text" name="lastName" id="lastName" required aria-label="Student's surname">
+                </p>
+                <p>
+                    <select id="classNameSelect" name="classNameSelect" required aria-label="Student's class selection box">
+                        <option value="">Choose a class</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit" id="studentCreationButton">Add a student</button>
+                </p>
+                <p class="confirmation studentCreationConfirm">Student added positively<i class="fa-solid fa-check"></i></p>
+            </fieldset>
+        </form>
+    </main>
+    <script src="./js/addStudents.js"></script>
+    <script src="./js/rules.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tsugumi" data-description="Support me on Buy me a coffee!" data-message="Thanks for using my apps!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <header>Students draw<i class="fa-solid fa-shuffle"></i></header>
+        <ul>
+            <li>
+                <a href="./index.html">Draw</a>
+            </li>
+            <li>
+                <a href="./adding.html">Adding</a>
+            </li>
+            <li>
+                <a href="./studentslist.html">List of students</a>
+            </li>
+            <li>
+                <a class="activePage" href="./information.html">Information</a>
+            </li>
+            <li>
+                <a href="./importexport.html">Exporting and Importing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="infoPage">
+        <article>
+            <h1>Information on the processing of personal data and the terms of use</h1>
+            <p>The "Student Draw" application stores all the data on the user's device.</p>
+            <p>The user of the application is solely responsible for the security and integrity of the data entered in the forms.</p>
+            <p>The code is entirely executed on the client's side. No personal data is transferred off the user's device.</p>
+            <br><hr><br>
+            <p>
+                The application uses the random.org API to generate truly random numbers.<br>
+                No personal data of students or others stored in the browser's local storage is sent to random.org.
+            </p>
+            <br><hr><br>
+            <p>
+                By using the application, the user accepts the terms and conditions of the API random.org available at
+                <a target="_blank" href="https://www.random.org/terms/2020-08-01" rel="noopener noreferrer">https://www.random.org/terms/2020-08-01</a>.
+            </p>
+            <br><hr><br>
+            <p>
+                All fonts available in the application are licensed under the SIL Open Font License (OFL) <br>
+                License information is available on the website <a target="_blank" href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" rel="noopener noreferrer">https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL</a>
+                and <a target="_blank" href="https://fonts.google.com/" rel="noopener noreferrer">https://fonts.google.com/</a>.
+            </p>
+            <br><hr><br>
+            <p>
+                The icons in the application are made available according to the license on the website <a href="https://fontawesome.com/license" target="_blank" rel="noopener noreferrer">https://fontawesome.com/license</a>.
+            </p>
+            <br><hr><br>
+            <p id="acceptRules">If you understand the above information and are ready to use the application, press the button below.</p>
+            <p id="acceptRulesButton"><button type="button">I accept the rules of using the application</button></p>
+        </article>
+    </main>
+    <script src="./js/rulesAccept.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tsugumi" data-description="Support me on Buy me a coffee!" data-message="Thanks for using my apps!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

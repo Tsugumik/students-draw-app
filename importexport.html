@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students draw</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <header>Students draw<i class="fa-solid fa-shuffle"></i></header>
+        <ul>
+            <li>
+                <a href="./index.html">Draw</a>
+            </li>
+            <li>
+                <a href="./adding.html">Adding</a>
+            </li>
+            <li>
+                <a href="./studentslist.html">List of students</a>
+            </li>
+            <li>
+                <a href="./information.html">Information</a>
+            </li>
+            <li>
+                <a class="activePage" href="./importexport.html">Exporting and Importing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="dataExport">
+        <form id="dataForm">
+            <fieldset>
+                <legend>Exporting the json file</legend>
+                <p>
+                    <select required name="dataFormSelect" id="dataFormSelect" aria-label="Export type selection field">
+                        <option value="">Select an export option</option>
+                        <option value="all">All data</option>
+                        <option value="students">Students only</option>
+                        <option value="classes">Classes only</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Download the json file</button>
+                </p>
+            </fieldset>
+        </form>
+        <form id="dataImportForm">
+            <fieldset>
+                <legend>Importing a json file</legend>
+                <p>
+                    <input required type="file" name="jsonFileInput" id="jsonFileInput" aria-label="The field for the json file to be imported">
+                </p>
+                <p><button type="submit" id="jsonFileInputButton">Import</button></p>
+                <p class="confirmation importConfirmation">Data imported positively<i class="fa-solid fa-check"></i></p>
+            </fieldset>
+        </form>
+    </main>
+    <script src="./js/jsonExp.js"></script>
+    <script src="./js/rules.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tsugumi" data-description="Support me on Buy me a coffee!" data-message="Thanks for using my apps!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>
